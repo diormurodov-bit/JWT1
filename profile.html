@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Профиль</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="card profile">
+    <div id="loading" class="loading">Загрузка...</div>
+
+    <div id="error" class="error-text" hidden></div>
+
+    <section id="content" hidden>
+      <img id="avatar" class="avatar" alt="Фото профиля" />
+      <div id="full-name" class="name"></div>
+
+      <div class="info">
+        <div class="info-row"><span>Email</span><span id="email"></span></div>
+        <div class="info-row"><span>Возраст</span><span id="age"></span></div>
+        <div class="info-row"><span>Город</span><span id="city"></span></div>
+      </div>
+
+      <button id="logout-btn" class="btn btn-outline" type="button">Выйти</button>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.7.7/dist/axios.min.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
